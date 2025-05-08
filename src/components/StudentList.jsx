@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import StudentCard from "./StudentCard";
-import { collection, onSnapshot, deleteDoc, doc } from "firebase/firestore";
+import { collection, onSnapshot } from "firebase/firestore";
 import { db } from "../firebase/config";
 import { useNavigate } from "react-router-dom";
 
@@ -22,15 +22,6 @@ export default function StudentList() {
 
     return () => unsub();
   }, []);
-
-  // Delete student from Firestore
-  const handleDelete = async (id) => {
-    try {
-      await deleteDoc(doc(db, "students", id));
-    } catch (err) {
-      console.error("Error deleting student:", err);
-    }
-  };
 
   // Get unique course options
   const courseOptions = [...new Set(students.map((s) => s.course))];
@@ -84,7 +75,6 @@ export default function StudentList() {
             <StudentCard
               key={student.id}
               student={student}
-              onDelete={handleDelete}
             />
           ))
         ) : (
