@@ -48,10 +48,10 @@ export default function StudentList() {
   return (
     <div>
       {/* Filter + Search + Add Student */}
-      <div className="flex justify-between items-center mb-6">
+      <div className="flex flex-col sm:flex-row sm:justify-between items-center mb-6 gap-4 sm:gap-0">
         <select
           onChange={(e) => setFilter(e.target.value)}
-          className="border p-2 rounded bg-white"
+          className="border p-2 rounded bg-white w-full sm:w-auto"
         >
           <option value="">All Courses</option>
           {courseOptions.map((course) => (
@@ -66,19 +66,19 @@ export default function StudentList() {
           placeholder="Search by name"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-96 border p-2 rounded bg-white ml-4"
+          className="w-full sm:w-96 border p-2 rounded bg-white mt-4 sm:mt-0 sm:ml-4"
         />
 
         <button
           onClick={() => navigate("/add")}
-          className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+          className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition w-full sm:w-auto mt-4 sm:mt-0"
         >
           Add Student
         </button>
       </div>
 
       {/* Student Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {filteredStudents.length > 0 ? (
           filteredStudents.map((student) => (
             <StudentCard
