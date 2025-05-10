@@ -1,28 +1,35 @@
-A responsive and user-friendly Students Dashboard built using React and Firebase Authentication. This dashboard enables student login/logout, displays personalized student details, and allows filtering based on enrolled courses using mock APIs. It is designed to be easily extendable for real-time educational platforms.
+# 📊 Students Dashboard
 
-🔧 Features
-🔐 Firebase Authentication (Login / Logout)
+A responsive and user-friendly **Students Dashboard** built using **React** and **Firebase Authentication**. This dashboard enables student login/logout, displays personalized student details, and allows filtering based on enrolled courses using mock APIs. It is designed to be easily extendable for real-time educational platforms.
 
-📋 Student List fetched from a mock API
+---
 
-🔍 Search & Filter students by name or course
+## 🔧 Features
 
-✅ Form Validation using React Hook Form
+- 🔐 **Firebase Authentication** (Login / Logout)
+- 📋 **Student List** fetched from a **mock API**
+- 🔍 **Search & Filter** students by name or course
+- ✅ **Form Validation** using **React Hook Form**
+- 🧭 **Navigation** between Dashboard and Login screens
+- 📱 **Responsive UI** with a clean and modern layout
 
-🧭 Navigation between Dashboard and Login screens
+---
 
-📱 Responsive UI with a clean and modern layout
+## 🛠️ Tech Stack
 
-🛠️ Tech Stack
-ReactJS (Vite)
+- ⚛️ **ReactJS** (Vite)
+- 🔥 **Firebase Auth**
+- 🌐 **React Router DOM**
+- 📡 **Axios** (API handling)
+- 📝 **React Hook Form** + **Yup** (Form validation)
+- 🎨 **Tailwind CSS** (Styling)
 
-Firebase Auth
+---
 
-React Router DOM
+## 🚀 Getting Started
 
-Axios (API handling)
+### 1. Clone the Repository
 
-React Hook Form + Yup (Form validation)
-
-Tailwind CSS (Styling)
-
+```bash
+git clone https://github.com/Aryan7019/Students-Dashboard.git
+cd Students-Dashboard
