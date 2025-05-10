@@ -26,10 +26,5 @@ A responsive and user-friendly **Students Dashboard** built using **React** and 
 
 ---
 
-## 🚀 Getting Started
 
-### 1. Clone the Repository
 
-```bash
-git clone https://github.com/Aryan7019/Students-Dashboard.git
-cd Students-Dashboard
